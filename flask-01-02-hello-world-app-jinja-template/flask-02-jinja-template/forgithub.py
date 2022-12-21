@@ -10,7 +10,7 @@ def head():
 @app.route('/carp')
 
 def carpim():
-    return render_template('body.html', num1=3, num2=5)
+    return render_template('body.html', num1=3, num2=5, carp=3*5)
 
 if(__name__ == '__main__'):
     app.run(port=80)
