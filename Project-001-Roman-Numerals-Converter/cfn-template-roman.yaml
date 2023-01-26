@@ -42,7 +42,7 @@ Resources:
           yum install python3 -y
           pip3 install flask
           cd /home/ec2-user
-          FOLDER="https://raw.githubusercontent.com/BekirKocabas/my-projects/main/Project-001-Roman-Numerals-Converter/"
+          FOLDER="https://raw.githubusercontent.com/okti3535/test-cli/main/"
           wget ${FOLDER}/app.py
           mkdir templates && cd templates
           wget ${FOLDER}/templates/index.html
@@ -50,15 +50,18 @@ Resources:
           cd ..
           python3 app.py
 
-Outputs:
+Outputs: 
   InstancePrivateIp:
     Description: Private Ip of EC2
-    Value: !Sub    
-     - Private Ip of EC2 is ${EC2PrivateIp}
-     - EC2PrivateIp: !GetAtt WebServerHost.PrivateIp
-   
+    Value: !Sub 
+      - Private Ip of ${EC2IP}
+      - EC2IP: !GetAtt WebServerHost.PublicDnsName 
 # http://${PublicAddress}
 # PublicAddress: !GetAtt WebServerHost.PublicDnsName
+
+
+
+
 
 # alternative for userdata
 # cd /home/ec2-user
