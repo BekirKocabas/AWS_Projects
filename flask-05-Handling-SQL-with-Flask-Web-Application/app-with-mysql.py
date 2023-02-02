@@ -6,9 +6,9 @@ from flaskext.mysql import MySQL
 app = Flask(__name__)
 
 # Configure mysql database
-app.config['MYSQL_DATABASE_HOST'] = 'flask-mysql-db.cxpehdch1s2v.us-east-1.rds.amazonaws.com' #write your database endpoint
+app.config['MYSQL_DATABASE_HOST'] = '#write your database endpoint' #write your database endpoint
 app.config['MYSQL_DATABASE_USER'] = 'admin'
-app.config['MYSQL_DATABASE_PASSWORD'] = '12345678'
+app.config['MYSQL_DATABASE_PASSWORD'] = '********'
 app.config['MYSQL_DATABASE_DB'] = 'bekirdb'
 app.config['MYSQL_DATABASE_PORT'] = 3306
 mysql = MySQL()

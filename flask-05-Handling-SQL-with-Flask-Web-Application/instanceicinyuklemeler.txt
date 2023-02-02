@@ -1,0 +1,14 @@
+sudo yum update -y
+sudo pip3 install flask
+sudo pip3 install flask-mysql #mysql client 
+sudo pip3 install sqlalchemy
+sudo pip3 install Flask-SQLAlchemy
+sudo yum install git -y
+pwd
+sudo git clone http://....................my-project.git
+ls
+cd my-projects
+cd flask-05.........
+sudo rm -r email.db
+sudo python3 app-with-sqlite.py
+sudo python3 app-with-mysql.py
