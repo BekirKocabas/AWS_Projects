@@ -1,7 +1,6 @@
 # My AWS Projects
-===============
-<hr>
 
+<hr>
 <p align="center">
     <img alt="Python" src="https://raw.githubusercontent.com/medipnegiz/linux_cheat_sheet/main/Img/aws.svg" height="190" width="455">
 </p>
