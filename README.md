@@ -1,5 +1,4 @@
-# my-projects
-My AWS Projects
+# My AWS Projects
 ===============
 <hr>
 
