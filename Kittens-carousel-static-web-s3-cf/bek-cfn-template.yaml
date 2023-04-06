@@ -76,7 +76,7 @@ Resources:
           Type: A
           AliasTarget:
             DNSName: !GetAtt KittensCloudfront.DomainName
-            HostedZoneId: Z2FDTNDATAQYW2 #Z083316534RU0UPWX0OCI
+            HostedZoneId: Z2FDTNDAQYW2 #Z083316534RU0UPWX0OCI
 Outputs:
   BucketName: 
     Description: S3 Bucket URL for Kittens Website
